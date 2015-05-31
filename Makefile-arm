@@ -1,0 +1,18 @@
+CFILES = src/convenience/convenience.c  src/librtlsdr.c src/tuner_fc0012.c src/tuner_fc0013.c src/tuner_r82xx.c src/rtl_power.c src/tuner_e4k.c src/tuner_fc2580.c
+OFILES = ${CFILES:.c=.o}
+TARGET = rtl_power
+
+CFLAGS = -I/usr/arm-linux-gnueabi/include/libusb-1.0 -Isrc
+LFLAGS = -march=armv7 -I/usr/arm-linux-gnueabi/lib -L/usr/arm-linux-gnueabi/lib -lusb-1.0 -lm -static -pthread
+
+CC = arm-linux-gnueabi-gcc
+#CC = gcc
+
+all: ${OFILES}
+	$(CC) -o rtl_power ${OFILES} ${LFLAGS}
+	
+%.o: %.c
+	$(CC) ${CFLAGS} -c $< -o $@
+	
+clean:
+	rm -rf ${OFILES} rtl_power

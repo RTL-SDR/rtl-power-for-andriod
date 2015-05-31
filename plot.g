@@ -1,0 +1,56 @@
+set terminal pdf
+
+set key top right out
+set key off
+set xrange [0:255]
+
+plot 'plot.txt' u 1:2 with lines t '21', \
+	'plot.txt' u 1:3 with lines t '22' , \
+	'plot.txt' u 1:4 with lines t '23' , \
+	'plot.txt' u 1:5 with lines t '24' , \
+	'plot.txt' u 1:6 with lines t '25' , \
+	'plot.txt' u 1:7 with lines t '26' , \
+	'plot.txt' u 1:8 with lines t '27' , \
+	'plot.txt' u 1:9 with lines t '28' , \
+	'plot.txt' u 1:10 with lines t '29' , \
+	'plot.txt' u 1:11 with lines t '30' , \
+	'plot.txt' u 1:12 with lines t '31' , \
+	'plot.txt' u 1:13 with lines t '32' , \
+	'plot.txt' u 1:14 with lines t '33' , \
+	'plot.txt' u 1:15 with lines t '34' , \
+	'plot.txt' u 1:16 with lines t '35' , \
+	'plot.txt' u 1:17 with lines t '36' , \
+	'plot.txt' u 1:18 with lines t '37' , \
+	'plot.txt' u 1:19 with lines t '38' , \
+	'plot.txt' u 1:20 with lines t '39' 
+#	'plot.txt' u 1:21 with lines t '40' , \
+#	'plot.txt' u 1:22 with lines t '41' , \
+#	'plot.txt' u 1:23 with lines t '42' , \
+#	'plot.txt' u 1:24 with lines t '43' , \
+#	'plot.txt' u 1:25 with lines t '44' , \
+#	'plot.txt' u 1:26 with lines t '45' , \
+#	'plot.txt' u 1:27 with lines t '46' , \
+#	'plot.txt' u 1:28 with lines t '47' , \
+#	'plot.txt' u 1:29 with lines t '48' , \
+#	'plot.txt' u 1:30 with lines t '49' , \
+#	'plot.txt' u 1:31 with lines t '50' , \
+#	'plot.txt' u 1:32 with lines t '51' , \
+#	'plot.txt' u 1:33 with lines t '52' , \
+#	'plot.txt' u 1:34 with lines t '53' , \
+#	'plot.txt' u 1:35 with lines t '54' , \
+#	'plot.txt' u 1:36 with lines t '55' , \
+#	'plot.txt' u 1:37 with lines t '56' , \
+#	'plot.txt' u 1:38 with lines t '57' , \
+#	'plot.txt' u 1:39 with lines t '58' , \
+#	'plot.txt' u 1:40 with lines t '59' , \
+#	'plot.txt' u 1:41 with lines t '60' , \
+#	'plot.txt' u 1:42 with lines t '61' , \
+#	'plot.txt' u 1:43 with lines t '62' , \
+#	'plot.txt' u 1:44 with lines t '63' , \
+#	'plot.txt' u 1:45 with lines t '64' , \
+#	'plot.txt' u 1:46 with lines t '65' , \
+#	'plot.txt' u 1:47 with lines t '66' , \
+#	'plot.txt' u 1:48 with lines t '67' , \
+#	'plot.txt' u 1:49 with lines t '68'
+	
+	

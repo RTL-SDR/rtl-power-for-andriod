@@ -1,0 +1,27 @@
+#!/usr/bin/rhino
+importPackage(java.io);
+
+function classify(data)
+{
+	print(data);	
+}
+
+function read(file)
+{
+	var reader = new BufferedReader(new FileReader(arguments[0]));
+
+	var line;
+	while (line=reader.readLine())
+	{
+		var p = (line+'').split(', ');
+		
+		print(p);
+	
+	}
+
+	reader.close();	
+}
+
+read(arguments[0]);
+
+
